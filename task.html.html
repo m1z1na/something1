@@ -1,0 +1,29 @@
+﻿
+<!DOCTYPE HTML>
+<html>
+<head>
+
+</head>
+<body>
+	<div id='fram'>
+		<div>
+			<p>Первое число:</p>
+			<input id="first"  size="40">
+		</div>
+		<div>
+			<p>Второе число:</p>
+			<input id="second"  size="40">
+		</div>
+			<br>
+			<input type="button" value='Сложить' onclick="addition()" > 
+		</div>
+<script>
+	function addition() {
+			var a = parseFloat(document.getElementById('first').value);
+			var b = parseFloat(document.getElementById('second').value);	
+			var c = a + b ;	
+			alert ( "Рeзультат: " + ( +c.toFixed(10) ) );
+	}
+</script>
+</body>
+</html>
